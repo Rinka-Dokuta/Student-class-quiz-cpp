@@ -1,0 +1,50 @@
+#include<iostream>
+using namespace std;
+
+
+class Student {
+private:
+	//Variables
+	string name;
+	int mathGrade;
+	int scienceGrade;
+	int englishGrade;
+
+	
+public:
+	//Constructor
+	Student(string name, int mathGrade, int scienceGrade, int englishGrade) {
+		string name = "Alice";
+		int mathGrade = (0, 100);
+		int scienceGrade = (0, 100);
+		int englishGrade = (0, 100);
+
+		
+	}
+	//Calculates and returns the average grade
+	float getAverage(int mathGrade, int scienceGrade, int englishGrade) {
+		return (mathGrade + scienceGrade + englishGrade) / 3;
+	}
+	//Outputs the student's name, individual grades, and average
+	int printReport(string name, int mathGrade, int scienceGrade, int englishGrade, float getAverage) {
+		cout << ("Student Name:", name, "Math grade:", mathGrade, "englishGrade:", englishGrade, "Average grade:", getAverage) << endl;
+	}
+};
+
+int main() {
+
+	//Object
+	Student ("Alice", 70, 90, 100);
+
+	//Call printReport function from Student class
+	int printReport = Student.printReport();
+
+
+
+
+
+
+
+
+
+}
